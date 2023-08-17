@@ -127,12 +127,19 @@ document.getElementById('case-btn').addEventListener('click', function(){
 
 
 
+document.getElementById('size-box').addEventListener('keyup', function(event){
+
+    const input = event.target.value;
+    textarea.style.fontSize = input+'px';
+
+})
 document.getElementById('size-box').addEventListener('change', function(event){
 
     const input = event.target.value;
     textarea.style.fontSize = input+'px';
 
 })
+
 document.getElementById('color').addEventListener('change', function(event){
     const input = event.target.value;
     textarea.style.color = input;
